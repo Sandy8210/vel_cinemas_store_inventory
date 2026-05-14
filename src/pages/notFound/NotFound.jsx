@@ -1,11 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import image from "./image.svg";
-import { useMediaQuery } from "@/hooks/use-media-query";
 
 const NotFound = () => {
   const navigate = useNavigate();
-  const isMobile = useMediaQuery("(max-width: 480px)");
 
   return (
     <div className="flex min-h-screen items-center justify-center px-4">
@@ -28,7 +26,7 @@ const NotFound = () => {
               mistyped the address, or the page has been moved to another URL.
               If you think this is an error, contact support.
             </p>
-            
+
             <div className="flex justify-center md:justify-start">
               <Button variant="outline" onClick={() => navigate("/")}>
                 Get back to home page

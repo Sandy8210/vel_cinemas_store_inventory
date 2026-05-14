@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./layout/Layout";
 import MainLayout from "./layout/MainLayout";
-import NotFound from "./pages/NotFound/NotFound";
+import NotFound from "./pages/notFound/NotFound";
 
 const Routing = () => {
   return (
